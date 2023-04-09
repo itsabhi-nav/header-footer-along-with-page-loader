@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorem, ipsum.</title>
+  <link rel="icon" href="facility.jpeg">
+  <link rel="stylesheet" href="service.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://kit.fontawesome.com/d8aa744da5.js"></script>
+</head>
+
+<body>
+  <!-- ======================================== 
+             Preloader
+    ========================================  -->
+  <div id="preloader"> </div>
+
+  <!-- ======================================== 
+             Header
+    ========================================  -->
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><img src="featured.webp" alt=""></a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+
+
+  <!--=======================================
+           Starting main coding from here
+  ======================================= -->
+  <!-- ======================================== 
+            Smart Classes
+      ========================================  -->
+  <div class="vi-head">
+    <h1>Lorem, ipsum dolor.
+      <hr>
+    </h1>
+  </div>
+  <section class="message">
+    <div class="msg">
+      <!-- <h1>Our Principal's Message</h1> -->
+      <img src="facility.jpeg" alt="">
+      <div class="msgs">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos fuga blanditiis voluptatem in. Autem,
+          accusamus aut quis natus consectetur voluptas omnis quia soluta commodi rem hic quasi quam ea ad architecto
+          animi quibusdam asperiores sunt dignissimos voluptates? Assumenda nisi necessitatibus iste obcaecati accusamus
+          odio velit explicabo dolorum corrupti maxime, amet recusandae provident labore, pariatur repellat repellendus
+          cupiditate unde laborum suscipit voluptas magni! Temporibus eligendi explicabo sit id consequatur? Inventore,
+          neque laborum. Maiores consequuntur et itaque. Aspernatur est rerum quidem, ullam quaerat nesciunt saepe quod
+          vitae corporis tempora tenetur adipisci sequi!
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ======================================== 
+          Our Footer Section
+    ========================================  -->
+
+  <footer class="footer">
+    <div class="cont">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit soluta sequi neque explicabo! Sed
+            accusantium autem, unde sit et explicabo, fugiat aut illum, deserunt impedit laboriosam eius recusandae
+            voluptas? Illum maiores rem fugiat provident sunt soluta est voluptates ducimus quaerat laudantium, cumque
+            aspernatur iste architecto accusamus voluptatibus! Sequi inventore modi vel, nemo a sunt dolorem culpa
+            temporibus rerum deleniti facere nihil, quaerat ipsam quas accusamus reprehenderit sapiente excepturi
+            dolorum ipsum. Illum officia deserunt iure? Itaque asperiores fugiat id sit? Sequi ea, minus aut non
+            similique nesciunt saepe possimus unde debitis?
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Reach Us</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.750858274708!2d77.49650715000749!3d12.92372801937985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3ee159ba3729%3A0x75a3463d510cf26e!2sR.%20V.%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1681025636824!5m2!1sen!2sin"
+            width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--==========================
+     JavaScript Code Here
+  =============================-->
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = () => {
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = () => {
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = () => {
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+  <script>
+    // Loader
+
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })
+  </script>
+
+
+</body>
+
+</html>
